@@ -57,7 +57,7 @@ int main() {
   for(auto c:"Waleed") {
     cout << c << endl;
   }
-
   */
+
   return 0;
 }
