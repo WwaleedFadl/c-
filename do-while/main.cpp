@@ -28,6 +28,7 @@ int main(){
   */
 
   char selection{};
+
   do{
     cout << "\n ---------------------------- " << endl;
     cout << "1.Do this" << endl;
@@ -48,6 +49,7 @@ int main(){
     else
       cout << "UNKNOWN OPTION -- TRY AGAIN...." << endl;
   }while(selection != 'q' && selection != 'Q');
+
   cout <<endl;
   return 0;
 }
