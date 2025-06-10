@@ -5,98 +5,97 @@
 using namespace std;
 
 int main(){
-  char first_name[20];
-  char last_name[20];
-  char full_name[50];
-  char temp[50];
+  
+  string s0;
+  string s1 {"Apple"};
+  string s2 {"Banana"};
+  string s3 {"Kiwi"};
+  string s4{"apple"};
+  string s5{s1};
+  string s6 {s1,0,4};
+  string s7 {10,'X'};
+
   /*
-  cout << first_name;
-  cout << "Please enter your name: ";
-  cin >> first_name;
-  cout << "Please enter your last name : ";
-  cin >> last_name;
-  cout << "--------------------------------------" << endl;
-  cout << "Hello " << first_name << " Your first name has : " << strlen(first_name) << " Characters" << endl;
-  cout << "And your last name is : " << last_name << " Your last name has : " << strlen(last_name) << " Characters "<< endl;
-  strcpy(full_name,first_name);
-  strcat(full_name," ");
-  strcat(full_name,last_name);
-  cout << "Your Full Name is " << full_name << endl;
-  cout << "---------------------------------------" << endl;
-  cout << "Enter your full name: ";
-  cin >> full_name;
-  cout << "Your full name is : " << full_name << endl;
-  cout << "Enter your full name: ";
-  cin.getline(full_name,50);
-  cout << "Your full name is: " << full_name << endl;
-  cout << "---------------------------------------" << endl;
-  strcpy(temp,full_name);
-  if(strcmp(temp,full_name) ==0) 
-    cout << temp << " and " << full_name << " are the same " << endl;
-  else
-    cout << temp << " and " << full_name << " are different " << endl;
-  cout << "---------------------------------------" << endl;
-  string s1 {"Frank"};
-  cout << s1 << endl;
-  string s2{"Frank",3};
-  cout << s2 << endl;
-  string s1;
-  s1 = "C++ Rocks!";
-  string s2 {"Hello"};
-  s2 = s1;
-  cout << s1 << endl;
-  cout << s2 << endl;
-  string part1 {"C++"};
-  string part2 {" is a powerful"};
-  string sentence;
-  sentence = part1 + " " + part2 + " language";
-  cout << sentence << endl;
-  string s1;
-  string s2 {"Frank"};
-  cout << s2[0] << endl;
-  cout << s2.at(0) << endl;
-  string s1{"Frank"};
-
-  for(char c:s1)
-    cout << c << endl;
-
-  string s1{"Frank"};
-
-  for(int c:s1)
-    cout << c << endl;
-
-  string s1 {"This is a test"};
-  cout << s1.substr(0,4) << endl;
-  cout << s1.substr(5,2) << endl;
-  cout << s1.substr(10,4) << endl;
-
-  string s1 {"This is a test"};
-
-  cout << s1.find("This") << endl;
-  cout << s1.find("is") << endl;
-  cout << s1.find("a") << endl;
-  cout << s1.find("test") << endl;
-  cout << s1.find("e") << endl;
-  cout << s1.find("is",4) << endl;
-  cout << s1.find("waleed") << endl;
-
-  //cout << s1.erase(0,5) << endl;
-  string s1 {"Frank "};
-  cout << s1.length() << endl;
-  s1 += " Waleed";
-  cout << s1 << endl;
-  cout << s1.length() << endl;
-
+  cout << s5 << endl;
+  cout << s5.length() << endl;
   */
 
-  string s1;
-  // cin >> s1;
-  //cout  << s1 << endl;
+  /*
+  cout << "Initialized " << "--------------------" << endl;
+  cout << "s1 is initialized to : " << s1 << endl;
+  cout << "s6 is initialized to : " << s6 << endl;
+  cout << "s7 is initialized to : " << s7 << endl;
+  */
 
-  //getline(cin,s1);
-  //cout << s1 << endl;
-  getline(cin,s1,'x');
-  cout << s1 << endl;
+  /*
+  cout << "Comparison " << "-----------------------------------------" << endl;
+  cout << s1 << " == " << s5 << ": " << (s1 == s5) << endl;
+  cout << s1 << " == " << s2 << ": " << (s1 == s2) << endl;
+  cout << s1 << " != " << s2 << ": " << (s1 != s2) << endl;
+  cout << s1 << " < " << s2 << ": " << (s1 < s2) << endl;
+  cout << s2 << " == " << s1 << ": " << (s2 > s1) << endl;
+  cout << s4 << " == " << s5 << ": " << (s4 < s5) << endl;
+  cout << s1 << " == " << "Apple" << ": " << (s4  == "Apple") << endl;
+  */
+
+  /*
+  cout << "Assignment " << "-----------------------------------------" << endl;
+  s1 = "Watermelon";
+  cout << "s1 is now : " << s1 << endl;
+  s2 = s1;
+  cout << "S2 is now " << s1 << endl;
+  s3 = "Frank";
+  cout << "S3 is now  " << s3 << endl;
+  s3[0] = 'C';
+  cout << "S3 chage first letter to " << s3 << endl;
+  s3.at(0) = 'P';
+  cout << "S3 change first letter to " << s3 << endl;
+  cout << endl;
+  */
+
+  /*
+  s3 = "Watermelon";
+  s3 = s5 + " And " + s3 + " Juice ";
+  cout << "S3 is now: " << s3 << endl;
+  */
+  
+  /*
+  cout << "Looping : " << endl;
+  s1 = "Apple";
+  for(size_t i{0};i<s1.length();++i) 
+    cout << s1.at(i);
+  cout << endl;
+  for(char c:s1)
+    cout << c;
+  */
+
+  /*
+  s1 = "This is a test";
+  cout << s1.substr(0,4) << endl;
+  */
+
+  /*
+  s1 = "This is a test";
+  s1.erase(0,5);
+  cout << "S1 is now: " << s1 << endl;
+  */ 
+
+  /*
+  string full_name{0};
+  cout << "Enter your name: " << endl;
+  getline(cin,full_name);
+  cout << "Your full name is: " << full_name << endl;
+  */
+
+  s1 = "This secret word is Boo ";
+  string word{};
+  cout << "Enter the word to find";
+  cin >> word;
+  size_t position = s1.find(word);
+  if(position != string::npos)
+    cout << "Found " << word << " at position : " << position << endl;
+  else 
+    cout << "Sorry " << word << " not found" << endl;
   cout << endl;
   return 0;
 }
