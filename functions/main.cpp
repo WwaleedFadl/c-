@@ -1,103 +1,42 @@
 #include <iostream>
-#include <cstring>
-#include <cctype>
-#include <string>
+#include <cmath>
+#include <cstdlib>
+#include <ctime>
+
 using namespace std;
 
 int main(){
-  
-  string s0;
-  string s1 {"Apple"};
-  string s2 {"Banana"};
-  string s3 {"Kiwi"};
-  string s4{"apple"};
-  string s5{s1};
-  string s6 {s1,0,4};
-  string s7 {10,'X'};
 
   /*
-  cout << s5 << endl;
-  cout << s5.length() << endl;
+  double num{};
+  cout << "Enter a number (double): " << endl;
+  cin >> num;
+  cout << "The sqrt of " << num << " is : " << sqrt(num) << endl;
+  cout << "The cubed root of " << num << " is : " << cbrt(num) << endl;
+  cout << "The sin of " << num << " is : " << sin(num) << endl;
+  cout << "The cosine of " << num << " is : " << cos(num) << endl;
+  cout << "The ceil of " << num << " is : " << ceil(num) << endl;
+  cout << "The floor of " << num << " is : " << floor(num) << endl;
+
+  double power{};
+  cout << "\n Enter a power to raise: " << num << " to ";
+  cin >> power;
+  cout << num << " Raised to  the " << power << " Power is : " << pow(num,power) << endl;
   */
 
-  /*
-  cout << "Initialized " << "--------------------" << endl;
-  cout << "s1 is initialized to : " << s1 << endl;
-  cout << "s6 is initialized to : " << s6 << endl;
-  cout << "s7 is initialized to : " << s7 << endl;
-  */
+  int random_number{};
+  size_t count{10};
+  int min{1};
+  int max {6};
 
-  /*
-  cout << "Comparison " << "-----------------------------------------" << endl;
-  cout << s1 << " == " << s5 << ": " << (s1 == s5) << endl;
-  cout << s1 << " == " << s2 << ": " << (s1 == s2) << endl;
-  cout << s1 << " != " << s2 << ": " << (s1 != s2) << endl;
-  cout << s1 << " < " << s2 << ": " << (s1 < s2) << endl;
-  cout << s2 << " == " << s1 << ": " << (s2 > s1) << endl;
-  cout << s4 << " == " << s5 << ": " << (s4 < s5) << endl;
-  cout << s1 << " == " << "Apple" << ": " << (s4  == "Apple") << endl;
-  */
+  cout << "Rand_max on my system is: " << RAND_MAX << endl;
+  srand(time(nullptr));
 
-  /*
-  cout << "Assignment " << "-----------------------------------------" << endl;
-  s1 = "Watermelon";
-  cout << "s1 is now : " << s1 << endl;
-  s2 = s1;
-  cout << "S2 is now " << s1 << endl;
-  s3 = "Frank";
-  cout << "S3 is now  " << s3 << endl;
-  s3[0] = 'C';
-  cout << "S3 chage first letter to " << s3 << endl;
-  s3.at(0) = 'P';
-  cout << "S3 change first letter to " << s3 << endl;
-  cout << endl;
-  */
+  for(size_t i{1};i<=count;++i)
+    random_number = rand() % max + min;
+    cout << random_number << endl;
 
-  /*
-  s3 = "Watermelon";
-  s3 = s5 + " And " + s3 + " Juice ";
-  cout << "S3 is now: " << s3 << endl;
-  */
-  
-  /*
-  cout << "Looping : " << endl;
-  s1 = "Apple";
-  for(size_t i{0};i<s1.length();++i) 
-    cout << s1.at(i);
-  cout << endl;
-  for(char c:s1)
-    cout << c;
-  */
 
-  /*
-  s1 = "This is a test";
-  cout << s1.substr(0,4) << endl;
-  */
-
-  /*
-  s1 = "This is a test";
-  s1.erase(0,5);
-  cout << "S1 is now: " << s1 << endl;
-  */ 
-
-  /*
-  string full_name{0};
-  cout << "Enter your name: " << endl;
-  getline(cin,full_name);
-  cout << "Your full name is: " << full_name << endl;
-  */
-
-  /*
-  s1 = "This secret word is Boo ";
-  string word{};
-  cout << "Enter the word to find";
-  cin >> word;
-  size_t position = s1.find(word);
-  if(position != string::npos)
-    cout << "Found " << word << " at position : " << position << endl;
-  else 
-    cout << "Sorry " << word << " not found" << endl;
-  */
   cout << endl;
   return 0;
 }
