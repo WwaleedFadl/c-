@@ -87,6 +87,7 @@ int main(){
   cout << "Your full name is: " << full_name << endl;
   */
 
+  /*
   s1 = "This secret word is Boo ";
   string word{};
   cout << "Enter the word to find";
@@ -96,6 +97,7 @@ int main(){
     cout << "Found " << word << " at position : " << position << endl;
   else 
     cout << "Sorry " << word << " not found" << endl;
+  */
   cout << endl;
   return 0;
 }
